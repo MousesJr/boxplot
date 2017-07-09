@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gerador de 'Box Plot'</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Gerador de 'Box Plot'</h1>
+    <div class="container">
+      <div class="form">
+        <form class="form_input" action="index.html" method="post">
+          <label>Valor:</label>
+          <input type="text" name="valor" autofocus="true" placeholder="Insira um valor" width="20px" height="10px" id="valor">
+          <button type="button" name="submit" id="submit">
+            <i class="fa fa-plus-circle"></i>
+            Adicionar
+          </button>
+        </form>
+      </div>
+      <div class="data">
+        <label>Valores:</label>
+        <output id="values"></output>
+        <label>Valor Máximo:</label>
+        <output id="max"></output>
+        <label>Valor Mínimo:</label>
+        <output id="min"></output>
+        <label>Q1:</label>
+        <output id="q1"></output>
+        <label>Q2:</label>
+        <output id="q2"></output>
+        <label>Q3:</label>
+        <output id="q3"></output>
+      </div>
+      <div class="boxPlot" id="boxPlot">
+        <div class="box" id="box">
+          <div id="maxLine">
+          </div>
+          <div id="line1">
+          </div>
+          <div id="q3Line">
+          </div>
+          <div id="sideL">
+          </div>
+          <div id="sideD">
+          </div>
+          <div id="median">
+          </div>
+          <div id="q1Line">
+          </div>
+          <div id="line2">
+          </div>
+          <br>
+          <div id="minLine">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src='js/main.js'></script>
+</html>
